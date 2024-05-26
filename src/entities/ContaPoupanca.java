@@ -1,22 +1,10 @@
 package entities;
 
-import interfaces.IConta;
 
-public class ContaPoupanca extends Conta implements IConta {
+public class ContaPoupanca extends Conta{
 
 
-    @Override
-    public void depositar(double valor) {
-
-    }
-
-    @Override
-    public void sacar(double valor) {
-
-    }
-
-    @Override
-    public void transferir(double valor, Conta contaDestino) {
-
+    public ContaPoupanca(Cliente cliente) {
+        super(cliente);
     }
 }
