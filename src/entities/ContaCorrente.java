@@ -1,34 +1,22 @@
 package entities;
 
-public class ContaCorrente {
+import interfaces.IConta;
 
-    private int agencia;
-    private int numero;
-    private double saldo;
+public class ContaCorrente extends Conta implements IConta {
 
 
-
+    @Override
     public void depositar(double valor) {
 
     }
 
+    @Override
     public void sacar(double valor) {
 
     }
 
-    public void transferir(double valor) {
+    @Override
+    public void transferir(double valor, Conta contaDestino) {
 
-    }
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public double getSaldo() {
-        return saldo;
     }
 }
