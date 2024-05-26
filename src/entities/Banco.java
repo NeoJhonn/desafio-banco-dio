@@ -33,7 +33,4 @@ public class Banco {
         this.contaList.stream().forEach(conta -> System.out.println("Cliente: "+ conta.getCliente().getNome()));
     }
 
-    public void setContaList(List<Conta> contaList) {
-        this.contaList = contaList;
-    }
 }
